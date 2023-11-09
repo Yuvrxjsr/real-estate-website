@@ -1,0 +1,504 @@
+@charset "utf-8";
+
+@import url(./reset.css);
+
+.container {
+    width: min(100% - 30px, 1200px);
+    margin-inline: auto;
+}
+
+/* --------------------Header + first section style----------------------- */
+/* ----------------------------------------------------------------------- */
+
+.hero-banner {
+    height: 525px;  
+    background: url(../img/bg-2.jpg) no-repeat center center ;
+    background-size: cover;
+}
+
+/* header style */
+
+header {
+    height: 80px;
+}
+
+.header-content {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.links-1 {
+    width: 60%;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.header-content h1 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.header-content li {
+    margin-left: 50px;
+}
+
+.header-content a:not(.book-now) {
+    color: #202124;
+    transition: all 0.25s ease-in-out;
+}
+
+.links-1 a, .links-2 a {
+    font-weight: 550;
+}
+
+.book-now {
+    position: relative;
+    color: #fff;
+    background-color: #453aee;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.25s ease-in-out;
+    display: inline-block;
+}
+
+.book-now::after {
+    position: absolute;
+    content: url(../img/menu.png);
+    visibility: hidden;
+    left: 0px;
+    top: 20px;
+}
+
+.links-1 a:hover, .links-2 a:not(.book-now):hover {
+    color: #453aee;
+}
+
+.book-now:hover {
+    background-color: #3a5cee;
+}
+
+/* first section style */
+
+.first-section {
+    padding: 60px 0px 90px 0px;
+    color: #202124;
+}
+  
+.first-section-content {
+    width: 35%;   
+}
+
+.first-section-content h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.first-section-content em {
+    font-style: italic;
+}
+
+.first-section-content p {
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+/* ------------------------Main Style---------------------------------- */
+/* -------------------------------------------------------------------- */
+
+/* search bar style */
+
+.search-bar-heading h2 {
+    font-size: 40px;
+    text-align: center;
+    padding-top: 90px;
+    font-weight: 600;
+}
+
+.search-bar input {
+    color: #202124;
+    border: 1px solid #d9cbd8;
+    width: 70%;
+    border-radius: 2px;
+}
+
+.search-bar input[type=text] {
+    padding: 25px 20px 25px 40px;
+    background: #fbf6fa url(../img/pin.png) no-repeat 10px 26px;
+    background-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-bar input[type=text]:hover {
+    box-shadow: 0 0 5px 0.5px #D3D3D3;
+} 
+
+.search-bar form {
+    padding: 40px 0px 90px 0px;
+    text-align: center;
+}
+
+::placeholder {
+    color: #747373;
+}
+
+/* locations style */
+
+.locations-bg {
+    background-color: #f7f6f9;
+    color: #202124;
+}
+
+.locations-header {
+    padding: 90px 0px 40px 0px;
+    text-align: center;
+}
+
+.locations-header h2 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.locations-header h3 {
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+.locations {
+    padding-bottom: 90px;
+}
+
+.locations .row {
+    display: flex;  
+    flex-wrap: nowrap;
+    gap: 20px;   
+}
+
+.locations .row .column {
+    width: 25%;
+}
+
+.locations .column :nth-child(3) {
+    padding: 10px 0px;
+}
+
+.locations h3 {
+    padding-top: 10px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.locations span {
+    font-weight: 700;
+}
+
+.locations i {
+    padding-right: 5px;
+    font-size: 14px;
+}
+
+.fa-location-dot {
+    color: #3a5cee;
+}
+
+.fa-star {
+    color: goldenrod;
+}
+
+/* offers style */
+
+.offer {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    color: #202124;
+}
+
+.offer .row {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.image {
+    flex: 0 0 auto;
+}
+
+.offer .row h2 {
+    padding-bottom: 10px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.offer-header div {
+    padding-bottom: 30px;
+}
+
+.offer-header h4 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.offer-header h3 {
+    font-size: 18px;
+}
+
+.offer-header button a {
+    padding: 15px 30px;
+    background-color: #453aee;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: all 0.25s ease-in-out;
+    display: inline-block;
+}
+
+.offer-header button a:hover {
+    background-color: #3a5cee;
+}
+
+.offer .column img {
+    height: 525px;
+    width: 500px;
+}
+
+/* --------------------Footer Style------------------------- */
+/* --------------------------------------------------------- */
+
+footer {
+    color: #fff;
+    background-color: #333;
+    height: 350px;
+    padding: 90px 0px;
+}
+
+.footer-1 {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.footer-1 h3 {
+    padding-bottom: 16px;
+}
+
+.footer-links {
+    display: flex;
+}
+
+.footer-links a, .footer-2 a {
+    color: #fff;
+    transition: all 0.25s ease-in-out;
+}
+
+.footer-links a:hover, .footer-2 a:hover {
+    color: #453aee;
+}
+
+.footer-links div + div {
+    margin-left: 70px;
+}
+
+.footer-links div li + li {
+    padding-top: 10px;
+}
+
+.footer-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-2 i {
+    font-size: 20px;
+}
+
+.footer-2 a + a {
+    margin-left: 26px;
+}
+
+.footer-description {
+    padding-right: 30px;
+}
+
+.footer-description h3 {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.footer-links h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/*--------------------- Media Queries----------------------*/
+/* ------------------------------------------------------- */
+
+@media screen and (max-width: 1190px) {
+    .first-section-content h1 {
+     font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 1085px) {
+    .book-now {
+        background-color: transparent;
+        color: #202124;
+    }
+    .first-section-content h1 {
+        font-size: 40px;
+    }
+    .first-section-content p {
+        font-size: 16px
+    }
+    .offer .row h2 {
+        font-size: 30px
+    }
+    .offer-header h4 {
+        font-size: 20px;
+    }
+    .locations h3 {
+        font-size: 20px;
+    }
+    .locations p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 878px) {
+    .offer .row h2 {
+        font-size: 25px
+    }
+    .offer-header h4 {
+        font-size: 15px;
+    }
+    .locations .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .locations .row .column {
+        width: calc(50% - 10px);
+    }
+    .locations .row .column:nth-child(3),
+    .locations .row .column:nth-child(4) {
+        padding-top: 25px;
+    }
+}
+
+@media screen and (max-width: 824px) {
+    .first-section-content h1 {
+     font-size: 30px;
+     padding-bottom: 5px;
+    }
+}
+
+
+@media screen and (max-width: 798px) {
+    .offer .row {
+        flex-wrap: wrap;
+    }
+    .offer .row h2 {
+        font-size: 30px
+    }
+    .offer-header h4 {
+        font-size: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .header-content li {
+        visibility: hidden;
+    }
+    .book-now::after {
+        visibility: visible;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .book-now::after {
+        left: -20px
+    }
+}
+
+@media only screen and (max-width: 724px) {
+    .book-now::after {
+        left: -40px
+    }
+}
+
+@media only screen and (max-width: 704px) {
+    .book-now::after {
+        left: -60px
+    }
+}
+
+@media only screen and (max-width: 684px) {
+    .book-now::after {
+        left: -80px
+    }
+}
+
+@media only screen and (max-width: 664px) {
+    .first-section-content h1 {
+        font-size: 27px;
+    }
+    .book-now::after {
+        left: -90px
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .book-now::after {
+        left: -100px
+    }
+    .first-section-content h1 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .book-now::after {
+        left: -120px
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .hero-banner {
+        height: 525px;  
+        background: url(../img/bg-2.jpg) no-repeat center left ;
+        background-size: cover;
+    }
+    .first-section-content{
+        width: 50%;
+    }
+    .first-section-content h1 {
+        font-size: 38px;
+    }
+    .first-section-content p {
+        font-size: 16px;
+    }
+    .book-now::after {
+        left: -140px
+    }
+    .search-bar-heading h2,
+    .locations-header h2 {
+        font-size: 32px;
+    }
+    .locations .row .column {
+        width: 100%;
+        text-align: center;
+    }
+    .locations .row .column + .column {
+        padding-top: 50px;
+    }
+    .locations h3 {
+        font-size: 25px;
+    }
+    .locations p {
+        font-size: 15px;
+    }
+}
